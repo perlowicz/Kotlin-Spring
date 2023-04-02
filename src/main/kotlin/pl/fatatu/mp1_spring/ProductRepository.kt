@@ -7,4 +7,6 @@ import org.springframework.data.repository.CrudRepository
  *
  * */
 
-interface ProductRepository : CrudRepository<Product, String>
+interface ProductRepository : CrudRepository<Product, String> {
+    fun findProductByName(name: String): Product
+}

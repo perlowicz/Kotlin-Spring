@@ -10,8 +10,8 @@ import org.springframework.data.relational.core.mapping.Table
  *
  * */
 @Table("PRODUCT")
-data class Product(@Id var id: String?,
-                   val name: String,
-                   val protein: Double,
-                   val fats: Double,
-                   val carbohydrates: Double)
+data class Product(@Id var id: Int,
+                   var name: String,
+                   var protein: Int,
+                   var fats: Int,
+                   var carbohydrates: Int)

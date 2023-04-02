@@ -11,7 +11,8 @@ import java.util.*
 @Service
 class ProductService(val db: ProductRepository) {
     fun findProducts(): List<Product> = db.findAll().toList()
-    fun findProductById(id: String): List<Product> = db.findById(id).toList()
+
+    fun findProductByName(name: String): Product = db.findProductByName(name)
 
     fun save(product: Product) {
         db.save(product)

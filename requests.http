@@ -3,10 +3,10 @@ POST http://localhost:8080/
 Content-Type: application/json
 
 {
-  "name": "Chicken breast",
-  "protein": 55.0,
-  "fats": 8.87,
-  "carbohydrates": 0.0
+  "name": "test1",
+  "protein": 55,
+  "fats": 8,
+  "carbohydrates": 0
 }
 
 ### Post "Second product"
@@ -15,14 +15,14 @@ POST http://localhost:8080/
 Content-Type: application/json
 
 {
-  "name": "Rice",
-  "protein": 8.0,
-  "fats": 0.0,
-  "carbohydrates": 52.1
+  "name": "test2",
+  "protein": 11,
+  "fats": 12,
+  "carbohydrates": 13
 }
 
 ### Get all the products
 GET http://localhost:8080/
 
-### Get product with specified id
-GET http://localhost:8080/bdc5990f-a576-414c-9383-ab53ee051264
+### Get product with specified name
+GET http://localhost:8080/product/Chicken%20breast
