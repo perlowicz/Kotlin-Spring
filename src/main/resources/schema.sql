@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS product (
+    id VARCHAR(60) DEFAULT RANDOM_UUID() PRIMARY KEY,
+    name VARCHAR(150) NOT NULL,
+    protein DOUBLE NOT NULL,
+    fats DOUBLE NOT NULL,
+    carbohydrates DOUBLE NOT NULL
+);
